@@ -1,0 +1,15 @@
+{
+  "players": [
+    {
+      "id": 1,
+      "nome": "Marcelo Batista",
+      "idade": "16",
+      "posicao": "Meio Campo",
+      "pernaboa": "Esq",
+      "cidade": "São Paulo",
+      "caracteristicas": "Ágil,Visão,Veloz",
+      "nomeresponsavel": "Jorge Batista",
+      "email": "jorgebatista@gmail.com"
+    }
+  ]
+}

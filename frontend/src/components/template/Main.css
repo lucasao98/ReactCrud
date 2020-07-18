@@ -1,0 +1,8 @@
+.conteudo{
+    background-color: white;
+    box-shadow: 5px 10px 8px black;
+    display: block;
+}
+.conteudo h1{
+    font-size: 50px;
+}

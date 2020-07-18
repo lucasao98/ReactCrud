@@ -1,0 +1,16 @@
+.menu{
+    background: linear-gradient(to bottom,black,rgba(0,0,0,0.8));
+    box-shadow: 5px 10px 8px black;
+}
+
+.menu-txt a {
+    display: block;
+    font-size: 18px;
+}
+
+.menu-txt a:hover{
+    background-color: white;
+    text-decoration: none;
+    color: #000;
+}
+

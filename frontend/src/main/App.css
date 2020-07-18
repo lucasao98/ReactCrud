@@ -1,0 +1,47 @@
+:root{
+    --logo-height: 130px;
+    --aside-width: 200px;
+    --header-height: 150px;
+    --menu-height: 100px;
+    --footer-height: 70px;
+}
+* {
+    font-family: 'Rowdies';
+    box-sizing: border-box;
+
+}
+
+.app{
+    margin: 0px;
+    display: grid;
+    grid-template-columns:var(--aside-width) 1fr;
+    grid-template-rows: 
+            var(--header-height)
+            1fr
+            var(--footer-height);
+    grid-template-areas:
+        "logo header "   
+        "nav content"
+        "footer footer";
+        height: 100vh;
+}
+
+aside.logo{
+    grid-area: logo;
+}
+
+header.header{
+    grid-area: header;
+}
+
+aside.menu{
+    grid-area: nav;
+}
+
+div.content{
+    grid-area: content;
+}
+
+footer.footer{
+    grid-area: footer;
+}
