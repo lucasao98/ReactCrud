@@ -13,7 +13,6 @@ const initialState = {
     player: { nome:'', idade:'', posicao:'', pernaboa:'', cidade:'', caracteristicas:'', nomeresponsavel:'', email:'' },
     list: []
 }
-
 export default class Lista extends Component{
     state = { ...initialState };
 
@@ -167,13 +166,50 @@ export default class Lista extends Component{
             )
         })
     }
+
+    renderTableEx(){
+        return(
+            <table className="table mt-4 table-dark">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Idade</th>
+                        <th>Posição</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {this.renderRowsEx()}
+                </tbody>
+            </table>
+        )
+    }
+
+    renderRowsEx(){
+            return(
+                <tr key='1'>
+                    <td>Marcelo Batista</td>
+                    <td>16</td>
+                    <td>Meio-Campo</td>
+                    <td>
+                        <button className="btn btn-primary">
+                            <i className="fa fa-pencil"></i>
+                        </button>
+
+                        <button className="btn btn-danger ml-2">
+                            <i className="fa fa-trash"></i>
+                        </button>
+                    </td>
+                </tr>
+            )
+    }
    
     render(){
         console.log(this.state.list);
         return(
             <Main {...headerProps}>
                     {this.renderForm()}
-                    {this.renderTable()}
+                    {this.renderTableEx()}
             </Main>
         )
     }
